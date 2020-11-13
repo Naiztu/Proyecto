@@ -2,7 +2,7 @@
 _Mi proyecto consta en como con la ayuda de la programación orientada objetos, se pueda organizar de una buena manera los datos del personal de una universidad._
 
 ## Logica inicial ⚙️ 
-_Teniendo un apartado de alumnos y maestros que conforman al personal de la universidad, por otro lado, varios alumnos pueden estar inscritos a clases mientras que los profesores solo pueden pertenecer a una clase._
+_Teniendo un apartado de alumnos y maestros que conforman al personal de la universidad, por otro lado, varios alumnos pueden estar inscritos a clases mientras que los profesores solo pueden pertenecer a una clase. Tambien se cuenta con calificaciones que se relacionan con el alumno y las clase a las que estos pertenecen._
 
 ## Notas 📌
 _Se encuentra en proceso, esto es un avance 1 de todo el proyecto._
