@@ -8,7 +8,7 @@ _Teniendo un apartado de alumnos y maestros que conforman al personal de la univ
 ![Diagrama](https://user-images.githubusercontent.com/74069232/99750743-8a68e500-2aa6-11eb-9447-48f2b0478554.png)
 
 ## Notas 📌
-_Se encuentra en proceso, esto es un avance 3 de todo el proyecto. Los casos de prueba se encuentran en archivo main.cpp_
+_Se encuentra en proceso, esto es un avance 3 de todo el proyecto. Los casos de prueba se encuentran en archivo main.cpp ._
 _Se le agrego la herencia pero se espera agregar agregación y composición para la entrega final_
 
 ## Autor ✒️
