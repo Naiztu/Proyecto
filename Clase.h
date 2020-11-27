@@ -41,30 +41,21 @@ class Clase{
 		int getNumCalif(){
 			return numCalf;
 		}
+		Calificacion getCalificacion(int i){
+			return calf[i];
+		}
+	
 		
+	
 		void agregarCalificacion(Alumno _alum, int _calif){
 			calf[numCalf]=Calificacion(_alum,_calif);
 			numCalf++;
 		}
+	
+	
+		//Metodos set	
 		void setCalificacion(int _calif, int indice){
 			calf[indice].setcalificacion(_calif);
 		}
-		
-		Calificacion getCalificacion(int i){
-			return calf[i];
-		}
-		
-		/**		
-		//Metodos set	
-		
-	
-		void setAlumno(Alumno _alum){
-			alum[numAlumnos] = _alum;
-			numAlumnos++;
-		} 
-		void setProfe(Profesor _prof){
-			prof= _prof;
-		}
-		**/
 };
 #endif
