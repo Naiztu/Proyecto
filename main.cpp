@@ -248,21 +248,15 @@ void agregarClase(){
 }
 
 /**
-CASO DE PRUEBA 4: AGREGAR CALIFICACION
+CASO DE PRUEBA 4: AGREGAR ALUMNO A CLASE
 INPUT:
 	Matricula del alumno: A01707404
 	Clave de la clase: TC1033
-	Calificaci¾n: 100
 	
 OUTPUT:
-			ííííAGREGADO CON EXITO!!!
 
 	*******************************************
-	*             CALIFICACION                *
-	*   Matricula del alumno: A01707404
-	*   Clave de la clase: TC1033
-	*   Calificaci¾n: 100
-	*   Estado: Aprobado
+	         ¡¡¡AGREGADO CON EXITO!!
 	*******************************************
 **/
 void agregarAlumnoClase(){
