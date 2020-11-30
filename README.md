@@ -5,7 +5,7 @@ _Mi proyecto consta que con la ayuda de la programación orientada objetos, se p
 _Teniendo un apartado de alumnos y maestros que conforman al personal de la universidad, por otro lado, varios alumnos pueden estar inscritos a una clase(maximo 35 alumnos y por lo tanto 35 calificaciones para cada uno), en una clase no puede haber mas de un profesor, pero un profesor si puede impartir varias clases. Las calificaciones se relacionan con el alumno y la clase a las que estos pertenecen._
 
 ### Diagrama UML clases
-![UML](https://user-images.githubusercontent.com/74069232/100487113-a420b280-30cc-11eb-93e9-649ede70e924.png)
+![DiagramaUML](https://user-images.githubusercontent.com/74069232/100558706-0ddbc080-3275-11eb-8fa4-e275029332f4.png)
 
 ## Notas 📌
 _Se encuentra en proceso, esto es un avance 3 de todo el proyecto. Los casos de prueba se encuentran en archivo main.cpp ._
