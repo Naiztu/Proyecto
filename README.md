@@ -16,7 +16,7 @@ _Se le agrego la herencia pero se espera agregar agregación y composición para
 * Se implemento agregación
 * Se implemento composición
 * Modifico el diagrama UML
-* Correccioón de problemas logísticos
+* Corrección de problemas logícos
 
 ## Autor ✒️
 _Este proyecto es realizado para la UF "Pensamiento Computacional para Orientado a Objetos" (TC1033.2) por :_
