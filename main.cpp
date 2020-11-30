@@ -1,9 +1,5 @@
 /**
-por: JosÈ ¡ngel Rico Mendieta - A01707404
-
-NOTAAAAAA:
-	 El programa solo est· en su avance n˙mero uno, por lo que solo se busca
-	 demostrar la implementaciÛn de los objetos.
+por: Jos√© √Ångel Rico Mendieta - A01707404
 **/
 
 #include <iostream>
@@ -37,7 +33,7 @@ int main(){
 	bool bandera = true;
 	while(bandera){
 		menu();
-		cout<<"\nOpciÛn: "; cin>>opcion;
+		cout<<"\nOpci√≥n: "; cin>>opcion;
 		cout << "\n*******************************************\n";
 		if (opcion == 1){
 			agregarAlumno();
@@ -56,10 +52,10 @@ int main(){
 		}else if (opcion == 8){
 			modificarCalificacion();
 		}else if (opcion == 9){
-			cout<<"\n°Adios!";
+			cout<<"\n¬°Adios!";
 			bandera = false;
 		}else {
-			cout<<"\n°OpciÛn no valida!";
+			cout<<"\n¬°Opci√≥n no valida!";
 			bandera = false;
 		}
 	}
@@ -78,7 +74,7 @@ void menu(){
     cout << "5. Ver Clase \n";
     cout << "6. Ver Alumno \n";
     cout << "7. Ver Profesor \n";
-    cout << "8. Modificar CalificaciÛn\n";
+    cout << "8. Modificar Calificaci√≥n\n";
     cout << "9. Salir \n";
     cout << "*******************************************\n";
 }
@@ -88,14 +84,14 @@ CASO DE PRUEBA 1: AGREGAR ALUMNO
 INPUT:
 	Nombre: Angel
 	Correo: Angel@hotmail.com
-	Direcciæn: Celaya#602
+	Direcci¬æn: Celaya#602
 	Matricula: A01707404
 	Carrera: ITC
 	Numero de Telefono: 4613701728
 	Edad: 18
 	
 OUTPUT:
-	       ÌÌÌAGREGADO CON EXITO!!!
+	       √≠√≠√≠AGREGADO CON EXITO!!!
 	*******************************************
 	*              CREDENCIAL                 *
 	*   Nombre: Angel						
@@ -103,7 +99,7 @@ OUTPUT:
 	*   Numero: 4613701728
 	*   Edad: 18    			Carrera: ITC
 	*   Correo: Angel@hotmail.com
-	*   Direcciæn: Celaya#602
+	*   Direcci¬æn: Celaya#602
 	*******************************************
 **/
 void agregarAlumno(){
@@ -121,12 +117,12 @@ void agregarAlumno(){
 	}
 	if (val){
 		cout << "\nCorreo: "; cin >> correo;
-		cout << "\nDirecciÛn: "; cin >> direccion;
+		cout << "\nDirecci√≥n: "; cin >> direccion;
 		cout << "\nCarrera: "; cin >> carrera;
 		cout << "\nNumero de Telefono: "; cin >> numeroTel;
 		cout << "\nEdad: "; cin >> edad;
 		alumnos[numAlumnos] = Alumno(nombre, correo, direccion, numeroTel, edad, matricula, carrera);
-		cout << "\n       °°°AGREGADO CON EXITO!!!\n";
+		cout << "\n       ¬°¬°¬°AGREGADO CON EXITO!!!\n";
 		cout << "\n*******************************************";
 		cout << "\n*              CREDENCIAL                 *";
 		cout << "\n*   Nombre: " << alumnos[numAlumnos].getNombre();
@@ -134,11 +130,11 @@ void agregarAlumno(){
 		cout << "\n*   Numero: " << alumnos[numAlumnos].getNumeroTel();
 		cout << "\n*   Edad: " << alumnos[numAlumnos].getEdad() << " 	Carrera: " << alumnos[numAlumnos].getCarrera();
 		cout << "\n*   Correo: " << alumnos[numAlumnos].getCorreo();
-		cout << "\n*   DirecciÛn: " << alumnos[numAlumnos].getDireccion();
+		cout << "\n*   Direcci√≥n: " << alumnos[numAlumnos].getDireccion();
 		cout << "\n*******************************************\n";
 		numAlumnos++;
 	}else{
-		cout << "\n       °°°ERROR YA ESTA REGISTRADO!!!\n";
+		cout << "\n       ¬°¬°¬°ERROR YA ESTA REGISTRADO!!!\n";
 	}
 }
 
@@ -147,14 +143,14 @@ CASO DE PRUEBA 2: AGREGAR PROFESOR
 INPUT:
 	Nombre: Benjamin
 	Correo: benjamin@tec.com
-	Direcciæn: Qro#123
+	Direcci¬æn: Qro#123
 	Clave: 12345
 	-rea: EIC
 	Numero de Telefono: 442111111
 	Edad: 29
 	
 OUTPUT:
-			ÌÌÌAGREGADO CON EXITO!!!
+			√≠√≠√≠AGREGADO CON EXITO!!!
 
 	*******************************************
 	*              CREDENCIAL                 *
@@ -163,7 +159,7 @@ OUTPUT:
 	*   Numero: 442111111
 	*   Edad: 29    -rea: EIC
 	*   Correo: benjamin@tec.com
-	*   Direcciæn: Qro#123
+	*   Direcci¬æn: Qro#123
 	*******************************************
 **/
 void agregarProfesor(){
@@ -181,24 +177,24 @@ void agregarProfesor(){
 	}
 	if (val){
 		cout << "\nCorreo: "; cin >> correo;
-		cout << "\nDirecciÛn: "; cin >> direccion;
-		cout << "\n¡rea: "; cin >> area;
+		cout << "\nDirecci√≥n: "; cin >> direccion;
+		cout << "\n√Årea: "; cin >> area;
 		cout << "\nNumero de Telefono: "; cin >> numeroTel;
 		cout << "\nEdad: "; cin >> edad;
 		profes[numProfes] = Profesor(nombre, correo, direccion, numeroTel, edad, clave, area);
-		cout << "\n       °°°AGREGADO CON EXITO!!!\n";
+		cout << "\n       ¬°¬°¬°AGREGADO CON EXITO!!!\n";
 		cout << "\n*******************************************";
 		cout << "\n*              CREDENCIAL                 *";
 		cout << "\n*   Nombre: " << profes[numProfes].getNombre();
 		cout << "\n*   Clave: " << profes[numProfes].getClave();
 		cout << "\n*   Numero: " << profes[numProfes].getNumeroTel();
-		cout << "\n*   Edad: " << profes[numProfes].getEdad() << "	¡rea: " << profes[numProfes].getArea();
+		cout << "\n*   Edad: " << profes[numProfes].getEdad() << "	√Årea: " << profes[numProfes].getArea();
 		cout << "\n*   Correo: " << profes[numProfes].getCorreo();
-		cout << "\n*   DirecciÛn: " <<profes[numProfes].getDireccion();
+		cout << "\n*   Direcci√≥n: " <<profes[numProfes].getDireccion();
 		cout << "\n*******************************************\n";
 		numProfes++;	
 	}else{
-		cout << "\n       °°°ERROR!!!\n";
+		cout << "\n       ¬°¬°¬°ERROR!!!\n";
 	}
 }
 
@@ -210,7 +206,7 @@ INPUT:
 	Clave del profesor: 12345
 	
 OUTPUT:
-			ÌÌÌAGREGADO CON EXITO!!!
+			√≠√≠√≠AGREGADO CON EXITO!!!
 
 	*******************************************
 	*                  CLASE                  *
@@ -236,7 +232,7 @@ void agregarClase(){
 		for (int i=0;i<numProfes;i++){
 			if (claveProfesor==profes[i].getClave()){
 				clases[numClases] = Clase(clave, nombre, profes[i]);
-				cout << "\n       °°°AGREGADO CON EXITO!!!\n";
+				cout << "\n       ¬°¬°¬°AGREGADO CON EXITO!!!\n";
 				cout << "\n*******************************************";
 				cout << "\n*                  CLASE                  *";
 				cout << "\n*   Nombre: " << clases[numClases].getNombre();
@@ -247,7 +243,7 @@ void agregarClase(){
 			}
 		}
 	}else{
-		cout << "\n       °°°ERROR!!!\n";
+		cout << "\n       ¬°¬°¬°ERROR!!!\n";
 	}
 }
 
@@ -256,16 +252,16 @@ CASO DE PRUEBA 4: AGREGAR CALIFICACION
 INPUT:
 	Matricula del alumno: A01707404
 	Clave de la clase: TC1033
-	Calificaciæn: 100
+	Calificaci¬æn: 100
 	
 OUTPUT:
-			ÌÌÌÌAGREGADO CON EXITO!!!
+			√≠√≠√≠√≠AGREGADO CON EXITO!!!
 
 	*******************************************
 	*             CALIFICACION                *
 	*   Matricula del alumno: A01707404
 	*   Clave de la clase: TC1033
-	*   Calificaciæn: 100
+	*   Calificaci¬æn: 100
 	*   Estado: Aprobado
 	*******************************************
 **/
@@ -288,7 +284,7 @@ void agregarAlumnoClase(){
 				if (valR){
 					clases[j].agregarCalificacion(alumnos[i],0);
 					cout << "\n*******************************************";
-					cout << "\n       °°°AGREGADO CON EXITO!!!\n";
+					cout << "\n       ¬°¬°¬°AGREGADO CON EXITO!!!\n";
 					cout << "\n*******************************************\n";
 					val=false;
 					break;
@@ -297,7 +293,7 @@ void agregarAlumnoClase(){
 		}
 	}
 	if (val){
-		cout << "\n       °°°NO ENOCNTRADO!!!\n";
+		cout << "\n       ¬°¬°¬°NO ENOCNTRADO!!!\n";
 	}
 }
 
@@ -326,7 +322,7 @@ void verClase(){
 		}
 	}
 	if (val){
-		cout << "\n       °°°NO ENOCNTRADA!!!\n";
+		cout << "\n       ¬°¬°¬°NO ENOCNTRADA!!!\n";
 	}
 }
 
@@ -345,7 +341,7 @@ void verAlumno(){
 			cout << "\n*   Numero: " << alumnos[i].getNumeroTel();
 			cout << "\n*   Edad: " << alumnos[i].getEdad() << " 	Carrera: " << alumnos[i].getCarrera();
 			cout << "\n*   Correo: " << alumnos[i].getCorreo();
-			cout << "\n*   DirecciÛn: " << alumnos[i].getDireccion();
+			cout << "\n*   Direcci√≥n: " << alumnos[i].getDireccion();
 			cout << "\n*******************************************\n";
 			cout << "\n\nClase\tCalificacion\tEstado";
 			cout << "\n-----------------------------------------";
@@ -362,7 +358,7 @@ void verAlumno(){
 		}
 	}
 	if (val){
-		cout << "\n       °°°NO ENOCNTRADA!!!\n";
+		cout << "\n       ¬°¬°¬°NO ENOCNTRADA!!!\n";
 	}
 }
 
@@ -379,9 +375,9 @@ void verProfesor(){
 			cout << "\n*   Nombre: " << profes[i].getNombre();
 			cout << "\n*   Clave: " << profes[i].getClave();
 			cout << "\n*   Numero: " << profes[i].getNumeroTel();
-			cout << "\n*   Edad: " << profes[i].getEdad() << "	¡rea: " << profes[i].getArea();
+			cout << "\n*   Edad: " << profes[i].getEdad() << "	√Årea: " << profes[i].getArea();
 			cout << "\n*   Correo: " << profes[i].getCorreo();
-			cout << "\n*   DirecciÛn: " <<profes[i].getDireccion();
+			cout << "\n*   Direcci√≥n: " <<profes[i].getDireccion();
 			cout << "\n*******************************************\n";
 			cout << "\n\nClases que imparte";
 			cout << "\n-----------------------------------------";
@@ -396,7 +392,7 @@ void verProfesor(){
 		}
 	}
 	if (val){
-		cout << "\n       °°°NO ENOCNTRADA!!!\n";
+		cout << "\n       ¬°¬°¬°NO ENOCNTRADA!!!\n";
 	}
 }
 
@@ -405,7 +401,7 @@ void modificarCalificacion(){
 	string matriculaAlumno, claveClase;
 	int calif;
 	bool val=true;
-	cout <<  "\n---Modificar CalificaciÛn---\n"; 
+	cout <<  "\n---Modificar Calificaci√≥n---\n"; 
 	cout << "\nClave de la clase: "; cin >> claveClase;
 	for (int j=0;j<numClases;j++){
 		if (claveClase==clases[j].getClave()){
@@ -414,11 +410,11 @@ void modificarCalificacion(){
 				if (matriculaAlumno==clases[j].getCalificacion(i).getAlumno().getMatricula()){
 					do
 					{
-					cout << "\nNueva CalificacÛn: "; cin >> calif;
+					cout << "\nNueva Calificac√≥n: "; cin >> calif;
 					} while((calif<0) || (calif>100));
 					clases[j].setCalificacion(calif,i);
 					cout << "\n*******************************************";
-					cout << "\n      °°°ACTUALIZADA CON EXITO!!!\n";
+					cout << "\n      ¬°¬°¬°ACTUALIZADA CON EXITO!!!\n";
 					cout << "\n*******************************************\n\n";
 					val=false;
 					break;
@@ -427,7 +423,7 @@ void modificarCalificacion(){
 		}
 	}
 	if (val){
-		cout << "\n       °°°NO ENOCNTRADO!!!\n";
+		cout << "\n       ¬°¬°¬°NO ENOCNTRADO!!!\n";
 	}
 }
 
