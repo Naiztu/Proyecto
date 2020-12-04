@@ -9,7 +9,7 @@
 //Clase Clase jajaja que redundancia
 class Clase{
 	private:
-		string clave, nombre,;
+		string clave, nombre;
 		Profesor prof;
 		Calificacion calf[35];
 
@@ -21,7 +21,7 @@ class Clase{
 			clave = _clave;
 			nombre = _nombre;
 			prof = _prof;
-			numCalf=0;
+			numCalf = 0;
 		}
 		
 		//Metodos get
